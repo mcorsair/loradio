@@ -1,0 +1,24 @@
+version: 1
+
+disable_existing_loggers: False
+
+formatters:
+    color:
+        class: colorlog.ColorFormatter
+        format: '{levelcolor}{asctime} {levelname:8} {reset} {magenta}{name:>8}{reset} {message}'
+        datefmt: '%H:%M:%S'
+        style: '{'
+
+handlers:
+    console:
+        class: colorlog.ColorHandler
+        formatter: color
+        stream: ext://sys.stdout
+
+root:
+    level: DEBUG
+    handlers: [console]
+
+loggers:
+    kivy:
+        level: WARNING

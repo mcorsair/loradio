@@ -1,0 +1,9 @@
+config:
+    app:
+        font_scale: 1.0
+
+    vocoder:
+        mode: 700
+        chunks: 10
+        sound_rate: 8_000
+        frames_per_buffer: 320

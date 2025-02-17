@@ -1,0 +1,15 @@
+numpy
+
+Kivy[base]
+https://github.com/kivymd/KivyMD/archive/master.zip
+
+pyyaml
+
+pyudev
+pyserial
+
+pycodec2
+pyaudio
+
+patchelf
+nuitka
